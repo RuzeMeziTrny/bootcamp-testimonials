@@ -1,0 +1,38 @@
+@import "variables", "visual", "text";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap');
+
+html { box-sizing: border-box; }
+*, :after, :before { box-sizing: inherit; }
+
+
+body {
+  margin: 0;
+  font-family: $font-primary;
+  font-size: $font-size;
+  font-weight: 300;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 100vw;
+  grid-template-rows: repeat (2, auto);
+  /* row-gap: ; */
+}
+
+.attribution {
+  font-size: 11px; text-align: center;
+
+  a {
+    color: hsl(228, 45%, 44%);
+  }
+
+}
+
+/* 
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+*/

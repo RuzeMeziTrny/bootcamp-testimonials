@@ -3,44 +3,45 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles/styles.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Frontend Mentor | Coding Bootcamp Testimonials Slider</title>
 </head>
 
 <body>
 
-  <main>
-    <section class="vizuals">
-      <img class="vizuals__bg" src="images/pattern-bg.svg">
-      <img class="vizuals__photo" src="images/image-tanya.jpg" alt="Tanya">
-      <!-- make an object with photo src and alt for different people -->
-      <div class="vizuals__arrows">
-        <img src="images/icon-prev.svg" alt="left arrow">
-        <img src="images/icon-next.svg" alt="right arrow">
+  <main class="main">
+    <section class="visual">
+      <img class="visual__bg" src="images/pattern-bg.svg">
+      <img class="visual__photo" src="images/image-tanya.jpg" alt="Tanya">
+      <div class="visual__arrows">
+        <button class="visual__arrow--left">
+          <img src="images/icon-prev.svg" alt="left arrow">
+        </button>
+        <button class="visual__arrow--right">
+          <img src="images/icon-next.svg" alt="right arrow">
+        </button>
       </div>
     </section>
 
     <section class="text">
-      <img src="images/pattern-quotes.svg">
       <p class="text__testimonial">
         “ I’ve been interested in coding for a while but never taken the jump, until now. I couldn’t recommend this course enough. I’m now in the job of my dreams and so excited about the future. ”
       </p>
       <p class="text__name">Tanya Sinclair</p>
-      <p class="text__position">UX Engineer</p>
-      <img src="images/pattern-curve.svg">
+      <p class="text__role">UX Engineer</p>
     </section>
 
     <section class="text text--hidden">
-      <img src="images/pattern-quotes.svg">
       <p class="text__testimonial">
         “ If you want to lay the best foundation possible I’d recommend taking this course. The depth the instructors go into is incredible. I now feel so confident about starting up as a professional developer. ”
       </p>
       <p class="text__name">John Tarkpor</p>
-      <p class="text__position">Junior Front-end Developer</p>
-      <img src="images/pattern-curve.svg">
+      <p class="text__role">Junior Front-end Developer</p>
     </section>
   </main>
+
+  <!-- make an object with photo src and alt for different people -->
 
   <div class="attribution">
     <p>

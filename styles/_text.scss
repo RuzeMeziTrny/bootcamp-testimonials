@@ -1,0 +1,18 @@
+.text {
+  grid-row: 2 / 3;
+
+  &--hidden {
+    display: none;
+  }
+
+  &::before {
+    content: url(../images/pattern-quotes.svg);
+  }
+
+  &::after {
+    content: url(../images/pattern-curve.svg);
+    display: block;
+    width: 100vw;     // nefunguje, opravit
+  }
+
+}
