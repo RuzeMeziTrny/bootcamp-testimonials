@@ -62,15 +62,15 @@ img {
 .visual__arrow--left {
   border-radius: 50% 0 0 50%;
   padding: 12px 16px 12px 12px;
-  -webkit-transform: translateX(5px);
-          transform: translateX(5px);
+  -webkit-transform: translateX(3px);
+          transform: translateX(3px);
 }
 
 .visual__arrow--right {
   border-radius: 0 50% 50% 0;
   padding: 12px 12px 12px 16px;
-  -webkit-transform: translateX(-5px);
-          transform: translateX(-5px);
+  -webkit-transform: translateX(-3px);
+          transform: translateX(-3px);
 }
 
 .visual__arrows button img {
@@ -81,6 +81,7 @@ img {
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
   grid-row: 2 / 3;
+  text-align: center;
 }
 
 .text--hidden {
@@ -88,13 +89,44 @@ img {
 }
 
 .text::before {
-  content: url(../images/pattern-quotes.svg);
+  content: "";
+  display: block;
+  height: 48px;
+  background-image: url(../images/pattern-quotes.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  -webkit-transform: translateY(24px);
+          transform: translateY(24px);
 }
 
 .text::after {
-  content: url(../images/pattern-curve.svg);
+  content: "";
   display: block;
-  width: 100vw;
+  height: 80px;
+  background-image: url(../images/pattern-curve.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  -webkit-transform: translateX(-20px);
+          transform: translateX(-20px);
+}
+
+.text__testimonial {
+  margin: 0;
+  padding: 0 32px;
+  line-height: 1.4;
+  font-size: 18px;
+}
+
+.text__name {
+  margin-bottom: 0;
+  font-weight: 700;
+}
+
+.text__role {
+  margin: 0;
+  font-weight: 500;
+  color: #babacf;
 }
 
 html {
@@ -110,8 +142,8 @@ html {
 body {
   margin: 0;
   font-family: "Inter", sans-serif;
-  font-size: 32px;
   font-weight: 300;
+  color: #202046;
 }
 
 .main {
@@ -122,7 +154,6 @@ body {
   -ms-grid-rows: (auto)[2];
       grid-template-rows: repeat(2, auto);
   justify-items: center;
-  /* row-gap: ; */
 }
 
 .attribution {

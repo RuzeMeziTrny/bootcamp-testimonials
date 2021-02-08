@@ -5,12 +5,12 @@
 html { box-sizing: border-box; }
 *, :after, :before { box-sizing: inherit; }
 
-
 body {
   margin: 0;
   font-family: $font-primary;
-  font-size: $font-size;
+  // font-size: $font-size;
   font-weight: 300;
+  color: $color-dark-blue;
 }
 
 .main {
@@ -18,11 +18,11 @@ body {
   grid-template-columns: 100vw;
   grid-template-rows: repeat(2, auto);
   justify-items: center;
-  /* row-gap: ; */
 }
 
 .attribution {
-  font-size: 11px; text-align: center;
+  font-size: 11px; 
+  text-align: center;
 
   a {
     color: hsl(228, 45%, 44%);

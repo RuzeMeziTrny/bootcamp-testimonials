@@ -1,18 +1,47 @@
 .text {
   grid-row: 2 / 3;
+  text-align: center;
 
   &--hidden {
     display: none;
   }
 
   &::before {
-    content: url(../images/pattern-quotes.svg);
+    content: "";
+    display: block;
+    height: 48px;
+    background-image: url(../images/pattern-quotes.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    transform: translateY(24px)
   }
 
   &::after {
-    content: url(../images/pattern-curve.svg);
+    content: "";
     display: block;
-    width: 100vw;     // nefunguje, opravit
+    height: 80px;
+    background-image: url(../images/pattern-curve.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: translateX(-20px)
   }
 
+  &__testimonial {
+    margin: 0;
+    padding: 0 32px;
+    line-height: 1.4;
+    font-size: 18px;
+  }
+  
+  &__name {
+    margin-bottom: 0;
+    font-weight: 700;
+  }
+
+  &__role {
+    margin: 0;
+    font-weight: 500;
+    color: $color-grayish-blue;
+  }
 }
