@@ -16,7 +16,8 @@ body {
 .main {
   display: grid;
   grid-template-columns: 100vw;
-  grid-template-rows: repeat (2, auto);
+  grid-template-rows: repeat(2, auto);
+  justify-items: center;
   /* row-gap: ; */
 }
 
