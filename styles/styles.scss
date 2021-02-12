@@ -8,16 +8,26 @@ html { box-sizing: border-box; }
 body {
   margin: 0;
   font-family: $font-primary;
-  // font-size: $font-size;
   font-weight: 300;
   color: $color-dark-blue;
 }
 
+@media screen and (min-width: 1000px) {
+  .container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 .main {
   display: grid;
-  grid-template-columns: 100vw;
+  grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, auto);
   justify-items: center;
+  align-items: center;
 }
 
 .attribution {
@@ -27,13 +37,13 @@ body {
   a {
     color: hsl(228, 45%, 44%);
   }
-
 }
 
-/* 
-The designs were created to the following widths:
-
-- Mobile: 375px
-- Desktop: 1440px
-
-*/
+@media screen and (min-width: 1000px) {
+  .attribution {
+    font-size: 14px; 
+    position: absolute;
+    bottom: 0;
+    right: 8px;
+  }
+}
